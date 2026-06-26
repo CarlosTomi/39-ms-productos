@@ -5,6 +5,9 @@ spring:
   application:
     name: ms-productos
   r2dbc:
-    url: r2dbc:postgresql://${DB_HOST:esdwbcoiisajpcjmvbud.supabase.co}:${DB_PORT:5432}/${DB_NAME:postgres}?sslMode=require
-    username: ${DB_USER:postgres}
-    password: ${DB_PASSWORD:c4rl0sj03!0gUr1C4p}
+    # 1. Agregamos el prefijo r2dbc: antes del host de Neon y el parámetro de sslMode
+    url: r2dbc:postgresql://${DB_HOST:ep-late-boat-atjvo9o0-pooler.c-9.us-east-1.aws.neon.tech}:5432/${DB_NAME:tienda}?sslMode=require
+    # 2. Tu nuevo usuario dueño de la base de datos
+    username: ${DB_USER:neondb_owner}
+    # 3. Tu contraseña de Neon (limpia sin caracteres que confundan a la URL)
+    password: ${DB_PASSWORD:npg_YyC1QWREbJ7O}
