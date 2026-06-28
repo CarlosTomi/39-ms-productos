@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: carlostomi-pedidos-ns
+  labels:
+    app: ms-productos
+    env: produccion

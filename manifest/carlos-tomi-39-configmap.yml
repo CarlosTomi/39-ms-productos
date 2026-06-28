@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ms-productos-config
+  namespace: carlostomi-pedidos-ns
+data:
+  SERVER_PORT: "8081"
+  DB_HOST: "ep-late-boat-atjvo9o0-pooler.c-9.us-east-1.aws.neon.tech"
+  DB_NAME: "tienda"
